@@ -9,8 +9,8 @@
 }
 
 body {
-    background :white;
-    color: black;
+    background :rgb(27, 27, 28);
+    color: rgb(255, 255, 255);
 }
 .header{
     position: fixed ;
@@ -26,14 +26,14 @@ body {
 
 .logo{
         font-size:25px;
-        color:rgb(92, 68, 11) ;
+        color:rgb(255, 255, 255) ;
         text-decoration: none;
         font-weight: 600; 
           } 
 
 .navbar a{
     font-size: 18px;
-    color:rgb(92, 68, 11) ;
+    color:rgb(242, 241, 239) ;
     font-weight: 500;
     margin-left:35px
 }
@@ -55,6 +55,21 @@ body {
 }
 .home-content h1{
     font-size:56px ;
+}
+.fa-linkedin{ 
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;   
+    padding: 10px;}
+.fa-github{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    padding: 10px;
 }
 img{
     max-height: 500px;
