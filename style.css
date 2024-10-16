@@ -129,17 +129,17 @@ img{
     top: 500px;
     margin-bottom: 5px;
 }
-.imageContainer {  /* Assuming this is the parent container */
+.imageContainer {  
     display: flex;
-    justify-content: center;  /* Centers items horizontally */
-    align-items: center;      /* Centers items vertically */
-    height: 100vh;            /* Full height of the viewport */
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
 }
 
 .blogImage {
-    max-height: 500px;        /* Maximum height for the image */
-    width: 300px;             /* Set the width of the image */
-    height: 300px;            /* Set the height of the image */
+    max-height: 500px;        
+    width: 300px;             
+    height: 300px;            
     margin: 10px;}
 
  
@@ -148,14 +148,14 @@ img{
     position: absolute;
     display: flex;
     top: 600px;
-    justify-content: space-between; /* Distributes space between items */
-    padding: 0 100px;               /* Adds space on both sides */
+    justify-content: space-between; 
+    padding: 0 100px;               
     
 }
 
 .blog1 {
-    flex: 1;                        /* Ensures the blog takes available space */
-    margin: 0 20px;                 /* Optional: Adds spacing between blogs */
+    flex: 1;                        
+    margin: 0 20px;                 
 }
 .blog1 h1 {
     font-size: 30px;
