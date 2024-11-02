@@ -10,7 +10,7 @@
 }
 
 body {
-    background :rgb(27, 27, 28);
+    background :rgb(14, 12, 12);
     opacity: 0.9;
     color: rgb(255, 255, 255);
 }
@@ -19,6 +19,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    margin-left: -150px;
+    margin-top: 10px;
     padding: 20px 10%;
     background: transparent;
     display:flex;
@@ -58,59 +60,67 @@ body {
 .home-content h1{
     font-size:56px ;
 }
-.fa-linkedin{ 
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+ 
+.socials-container{
+    display: flex;
+    gap: 20px;
     position: absolute;
-     right:75px ;
-    top: 5px;
-    padding: 10px;}
+    top: 20px;
+    right: 20px;
+}
+
+
+ .socials-container a{
+    background-color: white;
+    padding: 0.5em;
+    border-radius:50%;
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 10px black;
     
-.fa-github{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    right: 40px;
-    top: 5px;
-    padding: 10px;
-}
 
-.fa-instagram{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    padding: 10px;
+    
+ }
+ .socials-container a svg{
+    height: 24px;
+    fill: rgb(251, 180, 2);
+ }
+ .socials-container a:hover svg {
+    fill: aqua;  
 }
-
-.fa:hover {
-    color:aqua ;}
 
    
 
 .mypic{
-     max-height: 600px;
+      
     position: absolute;
     top: 100px;
-    left: 950px;
-    width: auto;
-    height:100vh;
+    left: 850px;
+    max-width: 650px;
+    max-height: 700px;
+
      
 }
 img{
     max-height: 500px;
     position: absolute;
-    top: 100px;
+    top: 120px;
     width: auto;
     height: auto;
     margin: 10px;
+    left: 30px;
 }
 .About_me{
      
     position: absolute;
     top: 120px;
-     left:600px
+     left:600px;
+    
+    
 }
 
 .content{
@@ -119,6 +129,7 @@ img{
     top: 200px;
     left:600px;
     margin-bottom: 20px;
+    right: 70px;
     
 
 }
@@ -130,18 +141,14 @@ img{
     top: 500px;
     margin-bottom: 5px;
 }
-.imageContainer {  
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    height: 100vh;            
-}
-
+ 
 .blogImage {
     max-height: 500px;        
-    width: 300px;             
-    height: 300px;            
-    margin: 10px;}
+    width: 300px;                        
+    margin: 10px;
+    position: absolute;
+    top: 150px;
+    left: 600px ;}
 
  
  
