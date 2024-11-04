@@ -3,9 +3,9 @@
     <head>
         <title>personal website portfolio
         </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">  
-         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">  
+ 
 
     </head>
     <body>
@@ -22,8 +22,8 @@
                   <ul>
                       <li><a href="index.html">Home</a></li>
                       <li><a href="about.html">About</a></li>
-                      <li><a href="Blog.html">Projects</a></li>
-                      <li><a href="Form.html">Contact</a></li>
+                      <li><a href="project.html">Projects</a></li>
+                      <li><a href="contact.html">Contact</a></li>
                   </ul>
               </div>
           </nav>
@@ -40,20 +40,33 @@
         
       
           </header>
+
+ 
+
+        
          
-        <section class="home" >
-            <div class="home-content" >
-                <h1>Nice to meet you </h1>
-                <h1>I'm Yuneth Samarasinghe</h1>
-                    <h3>Frontend Developer </h3>
-                    <p>Based in Sri-Lanka,I'm a front end developer passionate about making web-apps that users love. </p>
-                 
-            </div>
-        </section>
-     
-        <div>
-            <img class="mypic" src="coder.png" alt="my pic">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
+    
     </body>
 </html>
 

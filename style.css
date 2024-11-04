@@ -8,7 +8,82 @@
     font-family: ' poppins', sans-serif;
 
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #0f0c29, #302b63);
+    padding: 20px;
+}
 
+.brand-title {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+
+
+.navbar-links ul li {
+    padding: 0 20px;
+}
+
+.navbar-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: #CC6666;
+}
+
+/* Toggle button */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 25px;
+
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Bars of the toggle button */
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for the bars */
+}
+
+/* Animate the toggle button to an X shape */
+.navbar-links.active ~ .toggle-button .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-links.active ~ .toggle-button .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-links.active ~ .toggle-button .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+ 
+ 
 body {
     background :rgb(14, 12, 12);
     opacity: 0.9;
@@ -28,24 +103,7 @@ body {
     align-items: center;
     z-index: 100;}
 
-.logo{
-        font-size:25px;
-        color:rgb(255, 255, 255) ;
-        text-decoration: none;
-        font-weight: 600; 
-          } 
-
-.navbar a{
-    font-size: 18px;
-    color:rgb(242, 241, 239) ;
-    font-weight: 500;
-    margin-left:35px
-}
-
-.navbar a:hover,
-.navbar a.active{
-    color:aqua
-}
+ 
 .home{
     display:flex;
     height: 100vh;
@@ -170,3 +228,226 @@ img{
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* Blog  */
+
+.services{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+.box{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+     min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+color: #f9004d;}
+
+.h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom:25px ;}
+    
+.pra p{
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+/*Contact*/
+ 
+.contact-form {
+    max-width: 500px;
+    margin: 150px auto;
+    padding: 30px;
+    background: #191919;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 90%; /* Add this for better mobile responsiveness */
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #2d2d2d;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: 2px solid aqua;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #f9004d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d1003f;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+ 
+     
+
+
+/* For mobile phones */
+@media screen and (max-width: 378px) {
+    
+    .contact-form {
+        margin: 80px auto;
+        padding: 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .toggle-button {
+        display: flex;
+        
+        
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .navbar-links.active {
+        max-height: 500px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links ul li {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+     
