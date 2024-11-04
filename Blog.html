@@ -1,85 +1,69 @@
-<!DOCTYPE html>
-<html>
-    <head><title>personal website portfolio</title>
-        
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Domine:wght@400..700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css"> 
- 
-
-
- 
+      
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
     <body>
-        <header>
+       <header class="header">
+       <a href="Home.html" class="logo">Yuneth
+       <span>Samarasinghe</span></a>
 
-            <nav class="navbar">
-              <div class="brand-title">Pujana </div>
-              <a href="#" class="toggle-button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </a>
-              <div class="navbar-links">
-                  <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="project.html">Projects</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
-          </nav>
-      
-          <script>
-            const toggleButton = document.querySelector('.toggle-button');
-            const navbarLinks = document.querySelector('.navbar-links');
-        
-            toggleButton.addEventListener('click', () => {
-                navbarLinks.classList.toggle('active');
-                toggleButton.classList.toggle('active'); // Add this to trigger animation
-            });
-        </script>
-        
-      
-          </header>
+       <i class='bx bx-menu' id="menu-icon"></i>
 
-        
+       <nav class="navbar">
+        <a href="Home.html" class="active">Home</a>
+        <a href="About.html">About Me</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+       </nav>
+    </header>
+
+     <section class="blog" id="blog">
+      <h2 class="heading">My blog</h2>
+
+      <div class="blog-container">
+        <div class="blog-box">
+          <div class="blog-info">
+            <h4 >HTML</h4>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It provides the basic framework for websites, allowing developers to organize content with elements like headings, paragraphs, links, and images. HTML tags define each part of the content, making it easy to design and navigate a webpage.</p>
+
+          </div>
+        </div>
+        <div class="blog-box">
+          <div class="blog-info">
+            <h4 >Git-hub</h4>
+            <p>GitHub is a platform for version control and collaboration, allowing developers to store, manage, and track changes to code. Built on Git, it enables teams to work together on projects, review code, and manage multiple versions of software. GitHub also hosts open-source projects, making it a popular tool for sharing code, contributing to other projects, and building a portfolio.</p>
             
-       <div class="services">
-        <div class="title">
-            <h2>My blog</h2>
+          </div>
         </div>
-        <div class="box">
-            <div class="card">
-                <i class="fa-brands fa-html5"></i>
-                <h5>HTML</h5>
-                <div class="pra">
-                    <p>HTML (HyperText Markup Language) is the standard language used to create and structure content on the web.   </p>
-                    <p style="text-align: center;"><a class="button" href="#">Read more</a></p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <i class="fa-brands fa-github-alt"></i>
-                <h5>GitHub</h5>
-                <div class="pra">
-                    <p>GitHub is a platform for version control and collaboration, allowing developers to work together on projects.</p>
-                    <p style="text-align: center;"><a class="button" href="#">Read more</a></p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <i class="fa-solid fa-globe"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>Web development involves creating and maintaining websites, including web design, programming, and content management.</p>
-                    <p style="text-align: center;"><a class="button" href="#">Read more</a></p>
-                </div>
-            </div>
+        <div class="blog-box">
+          <div class="blog-info">
+            <h4 >Python</h4>
+            <p>Python is a versatile, high-level programming language known for its simplicity and readability. It supports multiple programming paradigms, such as procedural, object-oriented, and functional programming, making it a popular choice for beginners and professionals alike. Python is widely used in fields like web development, data science, artificial intelligence, and automation due to its vast library ecosystem and community support.</p>
+            
+          </div>
         </div>
-    </div>
-    
-
+        <div class="blog-box">
+          <div class="blog-info">
+            <h4 >Java</h4>
+            <p>Java is a versatile, object-oriented programming language widely used for building cross-platform applications. Known for its "write once, run anywhere" capability, Java is platform-independent and used in various applications, from mobile and web to large-scale enterprise systems. Its robust libraries, strong memory management, and focus on security make Java a popular choice for both beginner and professional developers.</p>
+            
+          </div>
+        </div>
+      </div>
+     </section>
+     <script src="script.js"></script>
     </body>
 </html>
-
- 

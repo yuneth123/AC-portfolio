@@ -1,26 +1,45 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navbar = document.querySelector('.navbar');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections= document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a'); 
 
-    navToggle.addEventListener('click', function() {
-        navbar.classList.toggle('active');
-        // Prevent scroll when menu is open
-        document.body.style.overflow = navbar.classList.contains('active') ? 'hidden' : '';
-    });
+window.onscroll = () =>{
+    sections.forEach(sec=>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.header')) {
-            navbar.classList.remove('active');
-            document.body.style.overflow = '';
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(links=>{
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*='+id+']').classList.add('active');
+            })
         }
-    });
 
-    // Close menu when window is resized above tablet breakpoint
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 1024) {
-            navbar.classList.remove('active');
-            document.body.style.overflow = '';
+
+
+    })
+}
+
+menuIcon.onclick=()=>{
+    menuIcon.classList.toggle('bx-x')  ;
+    navbar.classList.toggle('active');
+}
+    
+/*about me*/
+var tablinks =document.getElementsByClassName('tab-links');
+    var tabcontents =document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
         }
-    });
-});
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+        
+    }

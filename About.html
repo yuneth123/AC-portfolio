@@ -1,74 +1,91 @@
-<!DOCTYPE html>
-<html>
+<!Doctype html>
+<html lang="en">
     <head>
-        <title>personal website portfolio
-        </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css"> 
- 
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Domine:wght@400..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+       <header class="header">
+       <a href="Home.html" class="logo">Yuneth
+       <span>Samarasinghe</span></a>
 
-            <nav class="navbar">
-              <div class="brand-title">Pujana </div>
-              <a href="#" class="toggle-button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </a>
-              <div class="navbar-links">
-                  <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="project.html">Projects</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
-          </nav>
-      
-          <script>
-            const toggleButton = document.querySelector('.toggle-button');
-            const navbarLinks = document.querySelector('.navbar-links');
-        
-            toggleButton.addEventListener('click', () => {
-                navbarLinks.classList.toggle('active');
-                toggleButton.classList.toggle('active'); // Add this to trigger animation
-            });
-        </script>
-        
-      
-          </header>
+       <i class='bx bx-menu' id="menu-icon"></i>
 
-        <img  src="me.jpg" alt="My picture"> 
+       <nav class="navbar">
+        <a href="Home.html" class="active">Home</a>
+        <a href="About.html">About me </a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+       </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="me.jpg" alt="me"></div>
+                <div class="about-col-2"><h1 class="title">About Me</h1>
+                <p>Hi, I'm Yuneth Samarasinghe, a passionate front-end developer with a keen eye for design and functionality.
+                    With a solid foundation in HTML, CSS, JavaScript, and frameworks like React and Vue.js, I specialize in 
+                    creating responsive, user-friendly web interfaces. I enjoy turning complex problems into simple, beautiful
+                     designs and clean, efficient code.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
 
-         
-            
-            <div class="About_me">
-                <h1>About me</h1>
-            </div>
-                <div class="content"> 
-                    <p>Hi, I'm Yuneth Samarasinghe, a passionate front-end developer with a keen eye for design and functionality.
-                     With a solid foundation in HTML, CSS, JavaScript, and frameworks like React and Vue.js, I specialize in 
-                     creating responsive, user-friendly web interfaces. I enjoy turning complex problems into simple, beautiful
-                      designs and clean, efficient code. </p>
-
-
-                      <p>My goal is to craft websites and web applications that not only look great but also provide an intuitive and
-                     seamless user experience. I stay up-to-date with the latest front-end technologies, trends, and best practices
-                      to ensure the work I deliver is always modern and cutting-edge. </p>
-
-                    
-                      <p>When I'm not coding, you can find me exploring the latest in web design, contributing to open-source projects,
-                     or refining my skills to take on new challenges.</p>
+                </div>
+                <div class="tab-contents active-tab">
+                    <ul>
+                        <li><span>Web Development</span> </li>
+                        <li><span>Web  Designing</span> </li>
+                        <li><span>Java Developer</span> </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span><time datetime="2024">2024-Current:</time> Java Programming</span>
+                        </li>
+                        <li>
+                            <span><time datetime="2023-2024">2023-2024:</time> Python Programming</span>
+                        </li>
+                        <li>
+                            <span><time datetime="2022-2023">2022-2023:</time> SQL Data Entry</span>
+                        </li>
+                    </ul>
                 </div>
                 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span><time datetime="2024">2024-Current:</time> IIT Institute Undergraduate</span>
+                        </li>
+                        <li>
+                            <span><time datetime="2023">2023-2024:</time> Foundation Programme at IIT</span>
+                        </li>
+                        <li>
+                            <span><time datetime="2008-2023">2008-2023:</time> Studying at Thurstan College</span>
+                        </li>
+                    </ul>
+                </div>
                 
-            
+
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
      
-      
+<script src="script.js"></script>
     </body>
 </html>
-
- 
